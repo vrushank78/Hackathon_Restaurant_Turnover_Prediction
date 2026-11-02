@@ -56,6 +56,19 @@ This script:
 6. **Validate consistently:** keep the same folds while comparing experiments. A lower, stable CV RMSE is the signal to trust.
 7. **Submit carefully:** check row count, columns, order, missing predictions, and non-negative turnover.
 
+## Running a new tracked experiment
+
+Open `notebooks/Restaurant_Turnover_Prediction.ipynb`. In the validation section:
+
+1. Change the values in `EXPERIMENT_PARAMETERS`.
+2. Update `EXPERIMENT_OBSERVATION` to explain what you are testing.
+3. Run from that validation cell through the save cell once.
+
+The tracker automatically assigns the next ID, saves a file such as
+`submissions/submission_E10_rmse_20060530.csv`, appends the structured result to
+`experiments/experiment_history.csv`, and appends a readable entry to
+`experiments/EXPERIMENT_LOG.md`. Existing results are never overwritten.
+
 Good early experiments are: log-transforming the skewed target, extracting restaurant age, grouping rare categories, and comparing Random Forest/Extra Trees/Gradient Boosting models. Advanced libraries such as CatBoost can be tried later, after the baseline is trustworthy.
 
 ## Suggested schedule
