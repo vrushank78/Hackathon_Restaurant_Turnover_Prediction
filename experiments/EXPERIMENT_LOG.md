@@ -28,3 +28,25 @@ New runs are appended below automatically by `save_experiment()`.
 - Fold RMSE: [19563820.127694, 22512551.889555, 20606615.748509, 15162188.084437, 22457473.975444]
 - Submission: `submission_E10_rmse_20060530.csv`
 - Observation: Testing a slightly larger leaf with square-root feature sampling and depth 35.
+
+## E11 — ExtraTreesRegressor
+
+- Run at: 2026-11-02T17:18:53-06:00
+- Parameters: `max_depth=40`, `max_features=0.5`, `min_samples_leaf=3`, `n_estimators=800`
+- Mean RMSE: **20,084,967**
+- Standard deviation: **2,608,536**
+- Difference from E00: **133,745 better**
+- Fold RMSE: [19492358.705983, 22634739.278107, 20464834.658391, 15431152.684961, 22401751.47256]
+- Submission: `submission_E11_rmse_20084967.csv`
+- Observation: Testing a slightly larger leaf with square-root feature sampling and depth 35.
+
+## E12 — ExtraTreesRegressor
+
+- Run at: 2026-11-02T17:21:39-06:00
+- Parameters: `max_depth=30`, `max_features=0.6`, `min_samples_leaf=6`, `n_estimators=600`
+- Mean RMSE: **20,012,881**
+- Standard deviation: **2,676,180**
+- Difference from E00: **205,831 better**
+- Fold RMSE: [19266491.2945, 22657698.125352, 20437722.217144, 15289066.460893, 22413427.079415]
+- Submission: `submission_E12_rmse_20012881.csv`
+- Observation: Testing a slightly larger leaf with square-root feature sampling and depth 35.
