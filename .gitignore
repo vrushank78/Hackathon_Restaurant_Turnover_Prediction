@@ -5,11 +5,7 @@ __pycache__/
 .DS_Store
 
 # Competition-provided files: keep locally, do not publish
-Business_Context.txt
-Hackathon_Sample_Code.ipynb
-Sample_Solution.csv
-Train_dataset.csv
-Test_dataset.csv
+
 
 # Generated artifacts (keep the folders via .gitkeep)
 models/*
